@@ -1,0 +1,159 @@
+.file-upload
+  .file-input
+    display: inline-flex
+    align-items: center
+    grid-column-gap: 5px
+    background-color: #fff
+    border-color: #d9d9d9
+    box-shadow: 0 2px 0 rgba(0,0,0,.02)
+    padding: 4px 15px
+    border-radius: 6px
+    outline: none
+    position: relative
+    cursor: pointer
+    user-select: none
+    color: rgba(0,0,0,.88)
+    transition: all 0.3s ease-in-out
+    input
+      overflow: hidden
+      width: 0
+  .file-input:hover
+    color: var(--bs-primary)
+    border-color: var(--bs-primary)
+  .file-upload__error
+    margin-top: 10px
+    color: #f00
+    font-size: 12px
+  .file-preview-container
+    display: block
+    .file-preview
+      padding: 3px 5px
+      display: flex
+      padding: 8px
+      border: 1px dashed #d9d9d9
+      border-radius: 8px
+      margin-top: 8px
+      align-items: center
+      transition: all .3s ease-in-out
+      max-width: 300px
+      background: white
+      .file-img
+        border: 1px solid #ededed
+        height: 55px
+        width: 55px
+        object-fit: cover
+      .file-name
+        padding: 0px 5px
+        color: var(--bs-primary)
+        cursor: pointer
+      .file-name:hover
+        opacity: 0.7
+      .file-delete
+        color: #a9a9a9
+        margin-left: auto
+        cursor: pointer
+        border-radius: 4px
+        padding: 6px
+        transition: background-color .3s ease-in-out
+      .file-delete:hover
+        color: #505050
+        background: rgba(0, 0, 0, 0.06)
+  .thumbnail-preview-container
+    display: flex
+    flex-wrap: nowrap
+    .thumb-item
+      margin: 0.5rem
+      border-radius: 0.75rem
+      position: relative
+      overflow: hidden
+      border: 2px solid
+      .thumb-img
+        position: relative
+        z-index: 10
+        height: 120px
+        width: 120px
+        border-radius: 10%
+        img
+          width: 100%
+          height: 100%
+          object-fit: cover
+      .thumb-detail
+        position: absolute
+        top: 0
+        left: 0
+        opacity: 0
+        transition: opacity 0.2s linear
+        text-align: center
+        vertical-align: baseline
+        min-width: 100%
+        max-width: 100%
+        padding: 1rem 0.5rem
+        z-index: 20
+        .thumb-filename
+          margin-bottom: 1rem
+          border-radius: 8%
+          overflow: hidden
+          text-overflow: ellipsis
+          white-space: nowrap
+          font-size: 12px
+          cursor: pointer
+        .thumb-filename span:hover
+          background-color: white
+        .thumb-size
+          margin-bottom: 1rem
+          font-size: 16px
+          padding: 0 5px
+          border-radius: 8%
+        .thumb-filename span, .thumb-size span
+          background-color: rgba(255,255,255,.4)
+          padding: 3px 5px
+          transition: all 0.3s linear
+        .thumb-action
+          display: flex
+          justify-content: center
+          .thumb-delete
+            color: #a9a9a9
+            cursor: pointer
+            border-radius: 4px
+            padding: 3px 5px
+            transition: all .3s linear
+          .thumb-delete:hover
+            color: #7c7c7c
+            background-color: white
+      .thumb-error-message
+        z-index: 1000
+      .thumb-mask
+        z-index: 500
+    .thumb-item:hover
+      .thumb-img
+        filter: blur(8px)
+      .thumb-detail
+        opacity: 1
+    .thumb-item-uploaded
+      border-color: #009bbb
+    .thumb-item-error
+      border-color: #bb7000
+      .thumb-process
+        position: absolute
+        top: 20%
+        left: 15%
+        z-index: 1000
+        display: inline-block
+        width: 80px
+        height: 80px
+      .thumb-process:after
+        content: " "
+        display: block
+        width: 64px
+        height: 64px
+        margin: 8px
+        border-radius: 50%
+        border: 6px solid #fff
+        border-color: #fff transparent #fff transparent
+        animation: loading-ring-spinner 1.2s linear infinite
+
+@keyframes loading-ring-spinner
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)

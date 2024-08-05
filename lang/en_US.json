@@ -1,0 +1,220 @@
+{
+  "welcome": "Welcome",
+  "required-message": "Field is required",
+  "url-message": "Invalid URL format",
+  "ipAddress-message": "Invalid IP format. Eg: x.x.x.x",
+  "sign-out": "Sign Out",
+  "side-bar": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "category": "Category",
+    "region": "Region",
+    "area": "Area",
+    "province": "Province",
+    "district": "District",
+    "commune": "Commune",
+    "user": "User",
+    "application": "Application",
+    "country": "Country",
+    "specializes": "Specializes",
+    "department": "Department",
+    "organization": "Organization",
+    "commander": "Commander Organization",
+    "specialize": "Specialization",
+    "roles": "Roles",
+    "view": "View",
+    "resources": "Resource",
+    "resource": "Resource",
+    "config": "Config",
+    "extend": "Extend",
+    "ethnic": "Ethnicity",
+    "apikeys": "Credentials",
+    "mainOrganization": "Main organization",
+    "setting":"Setting",
+    "token":"Token",
+    "parttenPassword": "Partten Password"
+
+  },
+  "email-message": "Invalid email",
+  "phone-message": "Invalid phone",
+  "maxLength-message": "The maximum length allowed is",
+  "message": {
+    "profile": "Add a user information field in the application",
+    "role": "Add a user permissions field in the application"
+  },
+  "table": {
+    "header": {
+      "stt": "Order",
+      "name": "Name",
+      "code": "Code",
+      "description": "Description",
+      "action": "Actions",
+      "path": "Path",
+      "authorization": "Authorization",
+      "allow": "Allow",
+      "level": "Level",
+      "priority": "Priority",
+      "metadata": "Metadata",
+      "table": "Table",
+      "extendable": "Extend table",
+      "parent-path": "Parent path",
+      "keyName": "Key name",
+      "keyValue": "Key value",
+      "createdAt": "Created at",
+      "expiredAt": "Expired at"
+    },
+    "filter": {
+      "search": "Search"
+    },
+    "no-data": "There's no data. Please add new one or upload it.",
+    "user": {
+      "avatar": "Avatar",
+      "name": "Username",
+      "account": "Account",
+      "email": "Email",
+      "phone": "Phone number",
+      "password": "Password",
+      "accountSettings": "Account Settings",
+      "authorization": "User authorization",
+      "status": "Status",
+      "permission": "Permission",
+      "zone": "Zone",
+      "ability": "Ability",
+      "birthday": "Birthday",
+      "hometown": "Hometown",
+      "place-of-birth": "Place Of Birth",
+      "gender": "Gender",
+      "userId": "User id"
+    }
+  },
+  "gender": {
+    "female": "Female",
+    "male": "Male",
+    "other": "Other"
+  },
+  "timeTense": {
+    "minutes": "Minutes",
+    "hours": "Hours",
+    "days": "Days"
+  },
+  "tokenExpiration": "Token expiration time",
+  "addUser": "Add",
+  "add": "Add",
+  "extend": "Extend",
+  "addNewOne": "Add new one",
+  "import-export": "Import / Export",
+  "import": "Import File",
+  "export": "Export File",
+  "template": "Template File",
+  "addSuccessfully": "Add data successfully",
+  "update": "Update",
+  "updateSucessfully": "Update successfully",
+  "updateUnsuccessfully": "Update unsuccessfully",
+  "deleteRecordSuccessfully": "Delete the record successfully",
+  "confirmBeforeDeleting": "Are you sure to delete",
+  "confirmBeforeChange": "Are you sure you want to change the status?",
+  "confirmBeforeSaveDataStatic": "Data on the dynamic side will be deleted upon saving",
+  "confirmBeforeSaveDataDynamic": "Data on the static side will be deleted upon saving",
+  "goBack": "Back",
+  "save": "Save",
+  "close": "Close",
+  "noData": "No Data",
+  "inputThenEnterToAddData": "Input data then press Enter to add",
+  "noSuitableSearchResult": "No suitable search result",
+  "containsInvalidDigits": "Contains invalid digits",
+  "duplicateRecord": "There's a duplicate record",
+  "Value": "Value",
+  "Key": "Key",
+  "API": "API",
+  "applicationPage": {
+    "code": "Application code",
+    "name": "Application",
+    "order": "Sort order",
+    "origin": "Original application",
+    "id": "App id",
+    "permissionListOfRole": "Functions of the role",
+    "authorizedFunctionsList": "Authorized functions",
+    "unauthorizedFunctionsList": "Unauthorized functions",
+    "selectFunctionToAuthorize": "Kindly select a function to authorize",
+    "authorizeSuccessfully": "Authorize successfully"
+  },
+  "status": {
+    "activate": "Activate"
+  },
+  "profile": "Profile",
+  "allowedFileExtensions": "Allowed file types",
+  "pleaseSelectValidFileExtension": "Please select one of allowed file types",
+  "password": {
+    "change": "Change password",
+    "old": "Old password",
+    "new": "New password",
+    "confirm": "Confirm password",
+    "invalidRetypePassword": "Incorrect retype paasords"
+  },
+  "record": "Record",
+  "total": "Total",
+  "copyRight": "Phuc Dai An JSC All Rights Reversed",
+  "noAppId": "Please select an application",
+  "department": {
+    "name": "Department name",
+    "code": "Department code"
+  },
+  "organization": {
+    "name": "Organization name",
+    "code": "Organization code",
+    "commander": "Commander name",
+    "parent": "Parent organization"
+  },
+  "address": {
+    "address": "Address",
+    "provinceCode": "Province code",
+    "districtCode": "District code",
+    "communeCode": "Ward code",
+    "longtitude": "Longtitude",
+    "latitude": "Latitude"
+  },
+  "noDataToShow": "No data to show",
+  "noUserId": "No user id",
+  "forms": {
+    "extend": {
+      "addField": "Add",
+      "key": "Key",
+      "value": "Value",
+      "label": "Label",
+      "datatype": "Datatype",
+      "msg-error": "Please fill all information",
+      "msg-add": "Would you like to add new field?",
+      "add-data": "Add Data",
+      "msg-duplicate": "Duplicate data {key} value",
+      "msg-untouched": "Data hasn't been changed",
+      "static-prediction": "Static prediction",
+      "dynamic-prediction": "Dynamic prediction"
+    },
+    "importFile": {
+      "prefix": "Prefix",
+      "methodAPIs": "Method APIs",
+      "selectedFile": "Selected File",
+      "example": "Example"
+    },
+    "apiKey": {
+      "restriction": "Restriction",
+      "name": "Credential name"
+    }
+  },
+  "tag": {
+    "label": {
+      "addNewTag": "Press Enter to add this as new tag",
+      "remove": "Press Enter to remove"
+    }
+  },
+  "noRestriction": "No restriction",
+  "website": "Websites",
+  "ipAddresses": "IP addresses",
+  "none": "None",
+  "apiKey": "API Key",
+  "successfullyCopiedApiKey": "API Key has been copied successfully",
+  "confirmText": "",
+  "confirmTitle": "Confirm",
+  "cancel": "Cancel",
+  "86400000": "86400000"
+}

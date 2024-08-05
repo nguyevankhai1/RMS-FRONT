@@ -1,0 +1,136 @@
+.login_section
+  .login
+    display: grid
+    grid-template-columns: 45% 55%
+    &_form
+      background: #f1f1f1
+      height: 100vh
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      align-items: center
+      &_input
+        width: 50%
+        padding: 10px 15px
+        background: transparent
+        display: flex
+        flex-direction: column
+        .form_title
+          color: #001129
+          font-weight: 700
+          font-size: 28px
+          margin-bottom: 30px
+        .form_group
+          display: grid
+          grid-template-columns: 1fr
+          margin-bottom: 1rem
+        .form_tips
+          font-size: 12px
+          color: #6C757D
+        .form_action
+          display: flex
+          justify-content: space-between
+        .form_submit
+          margin-top: 2rem
+          margin-bottom: 2rem
+          background: #3A57E8
+        .form-helper
+          text-align: center
+
+    &_info
+      background: #f9f9f9
+      padding: 20px
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      align-items: center
+      img
+        max-height: 420px
+        width: auto
+        object-fit: contain
+
+.form_link
+  color: #3A57E8
+  transition: all 0.3s linear
+  cursor: pointer
+.form_link:hover
+  text-decoration: underline !important
+
+.fp_section, .cp_section
+  height: 100vh
+  background: url(~~/public/img/image3.png) no-repeat fixed center
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  .fp_container, .cp_container
+    box-shadow: 0px 8px 32px rgba(0, 16, 41, 0.05)
+    background: white
+    width: 400px
+    padding: 50px
+    display: flex
+    flex-direction: column
+    text-align: center
+    .fp_form, .cp_form
+      display: grid
+      grid-template-columns: 1fr
+      grid-gap: 1rem
+      margin-bottom: 2rem
+      text-align: left
+    .form_title
+      color: #001129
+      font-size: 28px
+      font-weight: bold
+      margin-bottom: 3rem
+    .fp_description
+      font-size: 12px
+      color: #8A92A6
+      margin-bottom: 2rem
+    .form_group
+      display: grid
+      grid-template-columns: 1fr
+      text-align: left
+    .fp_submit, .cp_submit
+      margin-top: 2rem
+      margin-bottom: 2rem
+      background: #3A57E8
+    .fp_tips, .cp_tips
+      font-size: 12px
+      color: #8A92A6
+    .cp_icon
+      border-radius: 50%
+      height: 100px
+      width: 100px
+      padding: 20px
+      background: #F4F8FF
+      color: #3A57E8
+      margin-bottom: 2rem
+
+$breakpoint-xs: 0
+$breakpoint-sm: 576px
+$breakpoint-md: 768px
+$breakpoint-lg: 992px
+$breakpoint-xl: 1200px
+$breakpoint-xxl: 1400px
+$breakpoint-xxxl: 1921px
+@media screen and (max-width: $breakpoint-lg)
+  .login_section
+    .login
+      display: block
+    .login_info
+      display: none
+
+@media screen and (min-width: $breakpoint-xxxl)
+  .login_section
+    height: 100vh
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    .login
+      margin: auto
+      width: 1300px
+      border-radius: 1rem
+      overflow: hidden
+      .login_form
+        height: 800px

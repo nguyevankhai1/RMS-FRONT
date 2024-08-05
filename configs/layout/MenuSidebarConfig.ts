@@ -1,0 +1,118 @@
+const MenuSidebarConfig = [
+  {
+    id: 2,
+    label: "Application",
+    name: "application",
+    path: "/application",
+    icon: "bi:display",
+  },
+  {
+    id: 9,
+    label: "Người dùng",
+    name: "user",
+    path: "/user",
+    icon: "solar:user-broken",
+  },
+  {
+    id: 3,
+    label: "Danh mục",
+    name: "category",
+    icon: "bi:file-earmark-text",
+    childs: [
+      {
+        id: 4,
+        label: "Region",
+        name: "region",
+        path: "/region",
+        parentId: 3,
+      },
+      {
+        id: 11,
+        label: "Country",
+        name: "country",
+        path: "/country",
+        parentId: 3,
+      },
+      {
+        id: 5,
+        label: "Area",
+        name: "area",
+        path: "/area",
+        parentId: 3,
+      },
+      {
+        id: 6,
+        label: "Province",
+        name: "province",
+        path: "/province",
+        parentId: 3,
+      },
+      {
+        id: 7,
+        label: "District",
+        name: "district",
+        path: "/district",
+        parentId: 3,
+      },
+      {
+        id: 8,
+        label: "Commune",
+        name: "commune",
+        path: "/commune",
+        parentId: 3,
+      },
+      {
+        id: 12,
+        label: "Department",
+        name: "department",
+        path: "/department",
+        parentId: 3,
+      },
+      {
+        id: 13,
+        label: "Organization",
+        name: "organization",
+        path: "/organization",
+        parentId: 3,
+      },
+      {
+        id: 14,
+        label: "Specialize",
+        name: "specialize",
+        path: "/specialize",
+        parentId: 3,
+      },
+      {
+        id: 15,
+        label: "Ethnic",
+        name: "ethnic",
+        path: "/ethnic",
+        parentId: 3,
+      },
+    ],
+  },
+  // {
+  //   id: 10,
+  //   label: "Cấu hình",
+  //   name: "config",
+  //   icon: "clarity:settings-line",
+  //   childs: [
+  //     {
+  //       id: 15,
+  //       label: "Extend",
+  //       name: "extend",
+  //       path: "/extend",
+  //       parentId: 10,
+  //     },
+  //   ],
+  // },
+  {
+    id: 17,
+    label: "API keys",
+    name: "apikeys",
+    path: "/apikeys",
+    icon: "mingcute:key-2-line",
+  },
+];
+
+export default MenuSidebarConfig;

@@ -1,0 +1,241 @@
+@import '_colors.sass'
+$min-width: 72px
+#__nuxt 
+  .view-wrapper 
+      transition: all 0.5s ease
+      width: calc(100% - 260px)
+      margin-left: 260px
+  .sidebar-layout 
+    .v-sidebar 
+      position: fixed
+      top: 0
+      left: 0
+      height: 100%
+      width: 260px
+      background-color: $white
+      z-index: 101
+      transition: all 0.5s ease
+      .logo-details 
+        height: 60px
+        width: 100%
+        display: flex
+        align-items: center
+        cursor: pointer
+        padding-left: 10px
+
+        .logo_name 
+          font-size: 22px
+          color: $dark-text
+          font-weight: 600
+          transition: 0.3s ease
+          transition-delay: 0.1s
+        
+        img 
+          // font-size: 30px
+          // color: $dark-text
+          // height: 50px
+          // min-width: 0px
+          // text-align: center
+          // line-height: 50px
+          width: 50px
+          margin-right: 10px
+        
+      
+
+      .nav-links 
+        background-color: $white
+        height: 100%
+        padding-left: 0
+        overflow: auto
+        &::-webkit-scrollbar 
+          display: none
+        
+        li 
+          position: relative
+          list-style: none
+          cursor: pointer
+          &:hover 
+            background: #ecf5ff !important
+            .sub-menu.blank 
+              top: 50%
+              // transform: translateY(-50%)
+            
+          
+          &[level|='2'] 
+            .icon-link 
+              i 
+                min-width: 20px !important
+              
+            
+          
+          &[level|='1'] 
+            .icon-link 
+              a 
+                i 
+                  min-width: $min-width
+                
+              
+            
+          
+          &.showMenu 
+            .icon-link 
+              transition: all 0.3 ease
+              // i.icon-down 
+              //   transform: rotate(-180deg)
+              // 
+            
+            // .sub-menu 
+            //   display: block
+            // 
+          
+
+          i 
+            height: 50px
+            min-width: $min-width
+            text-align: center
+            line-height: 50px
+            color: $dark-text
+            font-size: 20px
+            pointer-events: none
+            transition: all 0.3s ease
+          
+
+          a 
+            text-decoration: none
+            color: $dark-text
+            display: flex
+            align-items: center
+            pointer-events: none
+            white-space: nowrap
+            &.link_name 
+              font-size: 18px
+              font-weight: 400
+              color: $dark-text
+            
+          
+          .icon-link 
+            transition: all 0.3 ease
+            display: flex
+            align-items: center
+            justify-content: space-between
+            i 
+              min-width: 30px
+            
+          
+
+          .sub-menu 
+            padding: 0px 0px 14px 30px
+            background-color: $white
+            display: none
+            transition: 0s
+            &.blank 
+              opacity: 1
+              pointer-events: auto
+              padding: 3px 20px 6px 16px
+              opacity: 0
+              pointer-events: none
+            
+            a 
+              color: $dark-text
+              font-size: 15px
+              // padding: 5px 0
+              white-space: pre-wrap
+              opacity: 1
+              transition: all 0.3 ease
+              &:hover 
+                opacity: 1
+              
+              &.link_name 
+                display: none
+              
+            
+          
+        
+      
+    
+    .icon-right 
+      display: none
+    
+  
+
+  &.close 
+    .view-wrapper 
+        margin-left: 72px
+        width: calc(100% - 72px)
+      
+    .sidebar-layout 
+
+      .v-sidebar 
+        width: 72px
+        .nav-links 
+          overflow: visible
+          li 
+            background-color: white
+            .sub-menu 
+              background: transparent
+              position: absolute
+              left: 100%
+              margin-top: 0
+              padding: 0
+              padding-left: 10px
+              border-radius: 0 6px 6px 0
+              transition: all 0.4s ease
+              opacity: 0
+              pointer-events: none
+              display: none
+              border-right: 1px solid #d0d0d1
+              .link_name 
+                opacity: 1
+                pointer-events: none
+                display: block
+              
+              a 
+                white-space: nowrap
+              
+            
+            a 
+              .link_name 
+                opacity: 0
+                pointer-events: none
+              
+            
+            &:hover .sub-menu 
+              top: 0
+              opacity: 1
+              pointer-events: auto
+              transition: all 0.4s ease
+            
+
+            .icon-link 
+              display: block
+              padding-right: 10px
+
+              a 
+                i 
+                  display: block
+                
+              
+              i 
+                display: none
+              
+            
+          
+        
+        .logo-details 
+          height: 60px
+          width: 100%
+          display: flex
+          align-items: center
+          .logo_name 
+            opacity: 0
+            transition-delay: 0s
+            pointer-events: none
+          
+        
+        .icon-right 
+          display: none
+        
+      
+    
+  
+

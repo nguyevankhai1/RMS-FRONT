@@ -1,0 +1,46 @@
+/*
+ * Copyright (c) 2003-2023, CKSource Holding sp. z o.o. All rights reserved.
+ * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+ */
+
+/* Preserve aspect ratio of the resized image after introducing image height attribute. */
+.ck-content .media.media_resized {
+	height: auto;
+}
+
+.ck-content .media.media_resized {
+	max-width: 100%;
+	/*
+	The `<figure>` element for resized images must not use `display:table` as browsers do not support `max-width` for it well.
+	See https://stackoverflow.com/questions/4019604/chrome-safari-ignoring-max-width-in-table/14420691#14420691 for more.
+	Fortunately, since we control the width, there is no risk that the image will look bad.
+	*/
+	display: block;
+	box-sizing: border-box;
+
+	& .ck-media__wrapper {
+		/* For resized images it is the `<figure>` element that determines the image width. */
+		width: 100%;
+	}
+}
+
+
+[dir="ltr"] .ck.ck-button.ck-button_with-text.ck-resize-image-button .ck-button__icon {
+	margin-right: var(--ck-spacing-standard);
+}
+
+[dir="rtl"] .ck.ck-button.ck-button_with-text.ck-resize-image-button .ck-button__icon {
+	margin-left: var(--ck-spacing-standard);
+}
+
+.ck.ck-dropdown .ck-button.ck-resize-image-button .ck-button__label {
+	width: 4em;
+}
+
+
+/*
+ * hide ck powered tag
+*/
+.ck.ck-balloon-panel.ck-balloon-panel_position_border-side_right.ck-powered-by-balloon {
+	display: none;
+}

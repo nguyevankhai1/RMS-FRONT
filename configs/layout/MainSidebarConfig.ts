@@ -1,0 +1,70 @@
+const MainSidebar = [
+  {
+    name: 'Doashboard',
+    path: '/',
+    icon: 'feather:grid',
+    label: 'Doashboard',
+    click: true,
+    key: 'dashboard',
+  },
+  {
+    name: 'Giám sát',
+    path: '/giam-sat',
+    icon: 'feather:map',
+    label: 'Giám sát',
+    click: true,
+    key: 'giamsat',
+  },
+  // { name: 'NguoiDung', path: 'nguoi-dung', icon: 'feather:users' },
+  {
+    name: 'DanhMuc',
+    path: 'danh-muc',
+    icon: 'feather:file-text',
+    label: 'Danh mục',
+    key: 'category',
+  },
+  {
+    name: 'DonViPCCC',
+    path: 'don-vi',
+    icon: 'feather:users',
+    label: 'Đơn vị PCCC',
+    key: 'pcccUnit',
+  },
+  {
+    name: 'PhongChay',
+    path: 'phong-chay',
+    icon: 'feather:shield',
+    label: 'Phòng cháy',
+    key: 'fireProtection',
+  },
+  {
+    name: 'ChuaChay',
+    path: 'chua-chay',
+    icon: 'feather:truck',
+    label: 'Chữa cháy',
+    key: 'fireFighting',
+  },
+  {
+    name: 'ThietBi',
+    path: 'thiet-bi',
+    icon: 'feather:monitor',
+    label: 'Thiết bị',
+    key: 'device',
+  },
+  {
+    name: 'BaoCao',
+    path: 'bao-cao',
+    icon: 'feather:edit',
+    label: 'Báo cáo',
+    key: 'report',
+  },
+  {
+    name: 'NguoiDung',
+    path: 'nguoi-dung',
+    icon: 'feather:unlock',
+    label: 'Quản trị người dùng',
+    key: 'user',
+  },
+]
+
+export default MainSidebar

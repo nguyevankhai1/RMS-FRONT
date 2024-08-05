@@ -1,0 +1,146 @@
+.base-table
+  margin: 1rem
+
+  .filter
+    width: 44px
+    height: 44px
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+  .filter:hover
+    svg
+      color: #00a3ff !important
+
+  .table > :not(caption) > * > *
+    border-bottom: 1px dashed #f4f4f4
+    padding: 0.5rem 1.2rem
+  .table-fixed-head
+    overflow: auto
+  .table-fixed-head thead th
+    position: sticky
+    top: 0
+    z-index: 1
+  thead
+    tr
+      border-bottom: 1px dashed #f4f4f4
+      th
+        height: 48px
+        text-align: start
+        vertical-align: middle
+        // color: #6c757d
+        background-color: #ccc
+        background-color: white
+      .default-sort
+        visibility: hidden
+      th:hover
+        .default-sort
+          visibility: unset
+      .actions
+        width: 12rem
+  td
+    height: 48px
+    max-width: 26rem
+    vertical-align: middle
+
+    .actions
+      display: flex
+      justify-content: flex-start
+      align-items: center
+
+      .button
+        width: 30px
+        height: 30px
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        gap: 10px
+        cursor: pointer
+  .w-th
+    width: 50px !important
+
+  .no-data
+    height: 20rem
+    align-items: center
+    display: flex
+    justify-content: center
+    text-align: center
+
+  .page-icon
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #6c757d
+    margin-bottom: 2px
+    height: 2.5rem
+    width: 2.5rem
+  .page-icon:hover
+    cursor: pointer
+    color: white
+    border-radius: 0.475rem
+    background-color: #00a3ff
+  .nonEvent
+    pointer-events: none !important
+    svg
+      color: #ccc
+
+  .cp
+    cursor: pointer
+  .fs-12
+    font-size: 12px
+  .text-start
+    text-align: start
+  .text-center
+    text-align: center
+  .text-end
+    text-align: end
+
+  // table content animation
+  .slide-fade-enter-active
+    transition: all 0.4s ease-out 
+
+  .slide-fade-leave-active
+    transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1)
+
+  .slide-fade-enter-from,
+  .slide-fade-leave-to
+    transform: translateX(50px)
+    opacity: 0    
+
+.btn-file
+  position: relative
+  overflow: hidden
+
+  & input[type=file]
+    position: absolute
+    top: 0
+    right: 0
+    min-width: 100%
+    min-height: 100%
+    font-size: 100px
+    text-align: right
+    filter: alpha(opacity=0)
+    opacity: 0
+    outline: none
+    cursor: inherit
+    display: block
+.icon-arrow
+  margin-bottom: 4px
+  margin-left: 4px
+
+@media (max-width: 575.98px)
+  .table-fixed-head
+    height: 49rem
+
+@media (min-width: 576px)
+  .table-fixed-head
+    height: 49rem
+
+@media (min-width: 768px)
+  .table-fixed-head
+    height: 46rem
+
+@media (min-width: 992px)
+  .table-fixed-head
+    height: 42rem

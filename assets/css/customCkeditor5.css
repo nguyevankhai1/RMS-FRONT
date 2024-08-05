@@ -1,0 +1,26 @@
+img {
+    /* display: block; */
+    margin: 0 auto;
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+}
+  
+.media {
+    margin: 0.9em auto;
+    /* width: 50.51%; */
+}
+  
+.image-style-block-align-right {
+    margin-right: 0;
+    margin-left: auto;
+}
+.image-style-block-align-left {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.image-style-align-center {
+    margin-left: auto;
+    margin-right: auto;
+}

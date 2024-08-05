@@ -1,0 +1,219 @@
+{
+  "welcome": "Xin chào",
+  "required-message": "Vui lòng nhập dữ liệu",
+  "url-message": "Vui lòng nhập đúng định dạng website",
+  "ipAddress-message": "Vui lòng nhập đúng định dạng địa chỉ IP. Ví dụ: x.x.x.x",
+  "sign-out": "Đăng xuất",
+  "side-bar": {
+    "home": "Trang Chủ",
+    "dashboard": "Bảng Điều Khiển",
+    "category": "Danh Mục",
+    "region": "Vùng",
+    "area": "Khu vực",
+    "province": "Tỉnh/Thành phố",
+    "district": "Quận/Huyện",
+    "commune": "Phường/Xã",
+    "user": "Người dùng",
+    "application": "Ứng dụng",
+    "country": "Quốc gia",
+    "specializes": "Specializes",
+    "department": "Phòng ban",
+    "organization": "Tổ chức",
+    "commander": "Chỉ huy",
+    "specialize": "Chuyên môn",
+    "roles": "Vai trò",
+    "view": "View",
+    "resources": "Resource",
+    "resource": "Chức năng",
+    "config": "Cấu hình",
+    "extend": "Mở rộng",
+    "ethnic": "Dân tộc",
+    "apikeys": "Mã xác thực",
+    "mainOrganization": "Tổ chức chính",
+    "setting":"Cài đặt",
+    "token":"Token",
+    "parttenPassword": "Mật khẩu mẫu"
+  },
+  "email-message": "Email không đúng định dạng",
+  "phone-message": "Số điện thoại không đúng định dạng",
+  "maxLength-message": "Độ dài tối đa cho phép là",
+  "message": {
+    "profile": "Thêm trường lưu thông tin người dùng trong ứng dụng",
+    "role": "Thêm trường lưu thông tin quyền dùng trong ứng dụng"
+  },
+  "table": {
+    "header": {
+      "stt": "STT",
+      "name": "Tên",
+      "code": "Mã",
+      "description": "Mô tả",
+      "action": "Hành động",
+      "path": "Đường dẫn",
+      "authorization": "Quyền",
+      "allow": "Cho phép",
+      "level": "Cấp độ",
+      "priority": "Thứ tự ưu tiên",
+      "metadata": "Metadata",
+      "table": "Bảng",
+      "extendable": "Mở rộng bảng",
+      "parent-path": "Đường dẫn cha",
+      "keyName": "Tên key",
+      "keyValue": "Giá trị",
+      "createdAt": "Thời gian tạo",
+      "expiredAt": "Thời gian hết hạn"
+    },
+    "filter": {
+      "search": "Tìm kiếm"
+    },
+    "no-data": "Hiện chưa có dữ liệu. Vui lòng thêm mới hoặc tải tài liệu",
+    "user": {
+      "avatar": "Ảnh đại diện",
+      "name": "Tên người dùng",
+      "account": "Tên tài khoản",
+      "email": "Email",
+      "phone": "Số điện thoại",
+      "password": "Mật khẩu",
+      "accountSettings": "Thiết lập tài khoản",
+      "authorization": "Phân quyền người dùng",
+      "status": "Trạng thái",
+      "permission": "Phân quyền",
+      "zone": "Vùng",
+      "ability": "Ability",
+      "birthday": "Ngày sinh",
+      "hometown": "Quê quán",
+      "place-of-birth": "Nơi Sinh",
+      "gender": "Giới tính",
+      "userId": "Id của người dùng"
+    }
+  },
+  "gender": {
+    "female": "Nữ",
+    "male": "Nam",
+    "other": "Khác"
+  },
+  "timeTense": {
+    "minutes": "Phút",
+    "hours": "Giờ",
+    "days": "Ngày"
+  },
+  "tokenExpiration": "Cấu hình thời hạn token",
+  "parttenPassword": "Cấu hình mẫu mật khẩu",
+  "addUser": "Thêm",
+  "add": "Thêm mới",
+  "extend": "Mở rộng",
+  "addNewOne": "Thêm mới",
+  "import-export": "Nhập / Xuất",
+  "import": "Nhập File",
+  "export": "Xuất File",
+  "template": "Mẫu File",
+  "addSuccessfully": "Thêm mới thành công",
+  "update": "Cập nhật",
+  "updateSucessfully": "Cập nhật thành công",
+  "updateUnsuccessfully": "Cập nhật không thành công",
+  "deleteRecordSuccessfully": "Xóa bản ghi thành công",
+  "confirmBeforeDeleting": "Bạn có chắc chắn muốn xóa",
+  "confirmBeforeChange": "Bạn có chắc chắn muốn thay đổi trạng thái này?",
+  "confirmBeforeSaveDataStatic": "Dữ liệu ở phía động sẽ bị xóa khi lưu",
+  "confirmBeforeSaveDataDynamic": "Dữ liệu ở phía tĩnh sẽ bị xóa khi lưu",
+  "goBack": "Trở về",
+  "save": "Lưu",
+  "close": "Đóng",
+  "noData": "Không có dữ liệu",
+  "inputThenEnterToAddData": "Nhập và ấn Enter để thêm dữ liệu",
+  "noSuitableSearchResult": "Không có kết quả tìm kiếm phù hợp",
+  "containsInvalidDigits": "Bản ghi chứa ký tự không hợp lệ",
+  "duplicateRecord": "Bản ghi trùng",
+  "Value": "Value",
+  "Key": "Key",
+  "API": "API",
+  "applicationPage": {
+    "code": "Mã ứng dụng",
+    "name": "Ứng dụng",
+    "order": "Thứ tự sắp xếp",
+    "origin": "Ứng dụng gốc",
+    "id": "Id của ứng dụng",
+    "permissionListOfRole": "Danh sách chức năng cho vai trò",
+    "authorizedFunctionsList": "Danh sách chức năng đã phân quyền",
+    "unauthorizedFunctionsList": "Danh sách chức năng",
+    "selectFunctionToAuthorize": "Vui lòng chọn chức năng để phân quyền",
+    "authorizeSuccessfully": "Thực hiện phân quyền thành công"
+  },
+  "status": {
+    "activate": "Kích hoạt"
+  },
+  "profile": "Thông tin chi tiết",
+  "allowedFileExtensions": "Định dạng file hợp lệ",
+  "pleaseSelectValidFileExtension": "Vui lòng chọn định dạng file hợp lệ",
+  "password": {
+    "change": "Thay đổi mật khẩu",
+    "old": "Mật khẩu cũ",
+    "new": "Mật khẩu mới",
+    "confirm": "Xác nhận mật khẩu",
+    "invalidRetypePassword": "Mật khẩu xác nhận không đúng"
+  },
+  "record": "Bản ghi",
+  "total": "Tổng",
+  "copyRight": "Bản quyền thuộc về Công ty cổ phần công nghệ thông tin Phúc Đại An",
+  "noAppId": "Vui lòng chọn ứng dụng",
+  "department": {
+    "name": "Tên phòng ban",
+    "code": "Mã phòng ban"
+  },
+  "organization": {
+    "name": "Tên tổ chức",
+    "code": "Mã tổ chức",
+    "commander": "Tên chỉ huy",
+    "parent": "Tổ chức cha"
+  },
+  "address": {
+    "address": "Địa chỉ",
+    "provinceCode": "Mã tỉnh / thành phố trực thuộc",
+    "districtCode": "Mã quận / huyện",
+    "communeCode": "Mã phường / xã",
+    "longtitude": "Kinh độ",
+    "latitude": "Vĩ độ"
+  },
+  "noDataToShow": "Không có dữ liệu để hiển thị",
+  "noUserId": "Không có id của người dùng",
+  "forms": {
+    "extend": {
+      "addField": "Thêm",
+      "key": "Key",
+      "value": "Giá trị",
+      "label": "Label",
+      "datatype": "Datatype",
+      "msg-error": "Vui lòng điền đầy đủ thông tin",
+      "msg-add": "Bạn có muốn thêm mới thông tin trường không?",
+      "add-data": "Thêm dữ liệu",
+      "msg-duplicate": "Dữ liệu {key} không được trùng lặp",
+      "msg-untouched": "Dữ liệu không thay đổi",
+      "static-prediction": "Dự liệu tĩnh",
+      "dynamic-prediction": "Dự liệu động"
+    },
+    "importFile": {
+      "prefix": "Tiền tố",
+      "methodAPIs": "Phương thức API",
+      "selectedFile": "Tệp đã chọn",
+      "example": "Ví dụ"
+    },
+    "apiKey": {
+      "restriction": "Giới hạn sử dụng",
+      "name": "Tên của mã xác thực"
+    }
+  },
+  "tag": {
+    "label": {
+      "addNewTag": "Nhấn Enter để thêm làm thẻ mới",
+      "remove": "Nhấn Enter để xóa bỏ thẻ này"
+    }
+  },
+  "noRestriction": "Không giới hạn",
+  "website": "Websites",
+  "ipAddresses": "Địa chỉ IP",
+  "apiKey": "API Key",
+  "successfullyCopiedApiKey": "API Key đã được sao chép",
+  "confirmText": " không",
+  "confirmTitle": "Xác nhận",
+  "cancel": "Hủy bỏ",
+  "86400000": "86400000"
+}

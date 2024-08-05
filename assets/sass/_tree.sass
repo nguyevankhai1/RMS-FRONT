@@ -1,0 +1,62 @@
+.item
+  display: block
+  padding: 5px
+
+  .bold
+    font-weight: bold
+
+  .title
+    display: flex
+    align-items: center
+    grid-column-gap: 5px
+    cursor: pointer
+    user-select: none
+
+  .title-name
+    padding: 3px 5px
+    border-radius: 0.45rem
+    transition: background 0.3s ease-in-out
+
+  .child-item
+    padding-left: 46px
+
+  .title:hover
+    .title-name
+      background: #dadaeb
+
+// style tree line
+.tree-node, .tree-node-child
+  position: relative
+
+.tree-node-child
+  list-style: none
+
+.tree-node::before, .tree-node::after
+  content: ""
+  position: absolute
+  left: -12px
+
+.tree-node::before
+  border-top: 1px solid #00000042
+  top: 18px
+  width: 8px
+  height: 0
+
+.tree-node::after
+  border-left: 1px solid #00000042
+  height: 100%
+  width: 0px
+  top: -8px
+
+.tree-node-child > .tree-node:last-child::after
+  height: 26px
+
+// transition animation
+.append-enter-active
+  transition: opacity 0.5s ease 0.1s
+
+
+.append-enter-from,
+.append-leave-to
+  opacity: 0
+
